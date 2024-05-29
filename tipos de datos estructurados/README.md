@@ -54,3 +54,53 @@ lista_nombres.remove(o,"ruth")
 # segunda opcion - metodo pop_al pasarle por pametro un indice este lo eliminar de la lista
 lista_monbres=["edith","ruth","luz"]
 lista_nombres.pop(0)
+
+### 4. buscar un elemento en una lista
+```python
+lista_monbres=["edith","ruth","luz"]
+indice=lista_nombres.index("ruth)
+print(lista_nombres[indice])
+
+pertenencia="edith" in lista_nombres #true false
+
+### 5. comparacion de lista 
+podemos havcer usoo de los comparadores de comparacion para comparar listas 
+**ejm:**
+```python
+
+compara=[1,2,3]>[1,2,3]
+# 1 no por que son iguales en ambas listas
+# 2 no por que son iguales en ambas listas
+# 3 evalua que es menor que 4
+# entonces la primera lista es menor que la segunda lista
+print(compara)
+# salida
+```
+
+### 6. cuidado con las copias
+
+### 7. fe de errats(actualizar listas)
+```python
+
+lista=[1,3,4,5,6]
+lista[0]=2
+print(lista)
+#[2,3,4,5,6]
+#modificando lista con diccionario
+alumnos=[
+    {
+        "nombre":"abel",
+        "edad"!15
+    },
+    {
+        "nombre":anthony".
+        "edad":29
+
+    }
+]
+alumnos[0["edad"]=30
+alumnos[0]={"nombre":"mafer","edad":15}
+alumnos[1]{"sexo"}="por definir"
+print(alumnos)
+```
+

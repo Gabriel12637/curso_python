@@ -16,7 +16,7 @@ def insertar_alumno(nombre, apellido, edad):
 
 # Función para eliminar los datos de un alumno si existe en la lista
 def eliminar_alumno(nombre):
-    for alumno in lista_alumnos_circo:
+    for alumno in lista_alumnos:
         if alumno["nombre"] == nombre:
             lista_alumnos_circo.remove(alumno)
             print(f"Los datos de {nombre} han sido eliminados de la lista.")
@@ -39,3 +39,10 @@ eliminar_alumno("Abel")
 
 # Buscamos y mostramos al alumno en la posición 4 de la lista
 mostrar_alumno_en_posicion(4)
+
+# 2. crear una lista con tres dicionarios donde tendran los datos de sus mascotas (nombre,edad,sexo,raza)
+
+#tareas
+#mostar lista con 4 diccionario
+# editar el 3er registro y cambiarle la edad sin modificar la lista original
+#mostrar lista original y luego la lista con la 3er registro
