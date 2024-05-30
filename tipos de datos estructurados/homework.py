@@ -46,3 +46,34 @@ mostrar_alumno_en_posicion(4)
 #mostar lista con 4 diccionario
 # editar el 3er registro y cambiarle la edad sin modificar la lista original
 #mostrar lista original y luego la lista con la 3er registro
+
+dato_mascota=[
+    {"nombre":"michu",
+     "edad":5,
+     "sexo":"macho",
+     "raza":"siames"
+     },
+    {"nombre":"luna",
+     "edad":6,
+     "sexo":"hembra",
+     "raza":"persa"
+     },
+    {"nombre":"mimi",
+     "edad":4,
+     "sexo":"hembra",
+     "raza":"angora"
+     },
+    {"nombre":"gato",
+     "edad":7,
+     "sexo":"macho",
+     "raza":"britanico"
+     }
+]
+
+for diccionario in dato_mascota:
+    print(diccionario)
+print()
+copia_mascotas=dato_mascota.copy()
+copia_mascotas[2]["edad"]=7
+for copy in copia_mascotas:
+    print(copy)
