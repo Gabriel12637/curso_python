@@ -192,9 +192,9 @@ for mascota in mascotas:
 # de sus vehiculos ,proceso que desea automatisar con un sistema informatico
 # las acciones que ouede realizar el empresario son ver las listas de autos 
 # que tiene , podra tambien actualizar la lista y agregar un nuevo veiculo 
-# casos de uso
+
  # caso de uso 
-# yo como empresario podfre ver la 
+# yo como empresario podre ver la 
 # informacion de los veiculos
 
 # programacion 
@@ -230,4 +230,16 @@ if __name__ == "__main__":
     sistema.ver_vehiculos()
     sistema.actualizar_disponibilidad(0, False)
     sistema.ver_vehiculos()
+
+ 
+# crear una lista de los primeros 20 numeros primos haciendo uso de 
+# comprencion  
+# Función para verificar si un número es primo
+
+def is_prime(n):
+    return n > 1 and all(n % i != 0 for i in range(2, int(n**0.5) + 1))
+
+primeros_20_primos = [x for x in range(2, 100) if is_prime(x)][:20]
+print(primeros_20_primos)
+
 

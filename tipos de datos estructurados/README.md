@@ -104,3 +104,15 @@ alumnos[1]{"sexo"}="por definir"
 print(alumnos)
 ```
 
+### 8. listas y diccionarios por comprencion 
+es una tecnica pythonica  que nos permite crear litas en diccionarios combinando
+bucles y decciones 
+>[!note]
+**vlc**  valeu loop condicion - valor bucle condicion
+```python 
+# lista po comprencion 
+texto="1,4,8,9,6"
+nueva_lista=[int(n)for n in texto.split(",")if n%2==0]
+print(nueva_lista)  
+                     
+
