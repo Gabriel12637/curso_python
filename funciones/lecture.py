@@ -57,6 +57,8 @@ edad = int(input("Ingrese la edad de la persona: "))
 datos = obtener_datos_persona(nombre, edad)
 print("Datos de la persona:", datos)
 
+
+
   
 
 

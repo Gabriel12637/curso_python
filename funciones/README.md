@@ -142,13 +142,6 @@ alumno("ruth","castillo")
 alumno("anthony","crucez","desaprobado")
 ```
 
-
-
-
-
-
-
-
 ### desempaquetado/empaquetado de argumentos(tarea)
 El empaquetado y desempaquetado de argumentos en Python es una característica poderosa que te permite trabajar con un número variable de argumentos en una función. Aquí te explico ambos conceptos:
 
@@ -259,3 +252,9 @@ cadena = "123"
 numero = int(cadena)
 print("El número es:", numero)
 ```
+## tipos de funciones 
+### funciones anonimas(funciones lambda)
+### funciones closure
+### funciones callback
+
+### programacion funcional
