@@ -254,7 +254,153 @@ print("El número es:", numero)
 ```
 ## tipos de funciones 
 ### funciones anonimas(funciones lambda)
+```python
+lambda:"hola"
+# normal
+def saludo():
+    return "hola"
+```
+
+
 ### funciones closure
 ### funciones callback
-
+`int(input("ingrese un numero: "))
 ### programacion funcional
+la programacion funcional
+## programacion interativa
+```python
+lista=[5,7,8,4,1]
+def num_minimo(1)
+    minimo=l[0]
+    for n in l:
+        if n < minimo
+        minimo=n
+    return minimo
+# programacion funcional
+min (lista)
+```
+
+
+### averiguar sobre map(), filter(), reduce()
+Claro, te puedo explicar brevemente sobre las funciones `map()`, `filter()` y `reduce()` en Python, que son funciones de orden superior utilizadas comúnmente en programación funcional y que pueden ser muy útiles en diversas situaciones.
+
+### 1. `map()`
+
+La función `map()` en Python aplica una función a cada elemento de un iterable (como una lista o tupla) y devuelve un iterable con los resultados. La sintaxis general es:
+
+```python
+map(función, iterable)
+```
+
+- `función`: Es la función que se aplicará a cada elemento del iterable.
+- `iterable`: Es el iterable (por ejemplo, una lista) sobre el cual se aplicará la función.
+
+Ejemplo de uso de `map()`:
+
+```python
+# Función que eleva un número al cuadrado
+def cuadrado(x):
+    return x ** 2
+
+# Lista de números
+numeros = [1, 2, 3, 4, 5]
+
+# Aplicar la función cuadrado a cada número usando map()
+resultado = map(cuadrado, numeros)
+
+# Convertir el resultado a una lista
+resultado_lista = list(resultado)
+
+print(resultado_lista)  # Output: [1, 4, 9, 16, 25]
+```
+
+En este ejemplo, `map(cuadrado, numeros)` aplica la función `cuadrado` a cada elemento de la lista `numeros` y devuelve un iterable que contiene los resultados. Luego, se convierte este iterable en una lista para mostrar los resultados.
+
+### 2. `filter()`
+
+La función `filter()` se utiliza para filtrar elementos de un iterable según una función de filtro especificada. La sintaxis es:
+
+```python
+filter(función_de_filtro, iterable)
+```
+
+- `función_de_filtro`: Es una función que devuelve `True` o `False`. Se aplica a cada elemento del iterable.
+- `iterable`: Es el iterable del cual se quieren filtrar los elementos.
+
+Ejemplo de uso de `filter()`:
+
+```python
+# Función que verifica si un número es par
+def es_par(x):
+    return x % 2 == 0
+
+# Lista de números
+numeros = [1, 2, 3, 4, 5]
+
+# Filtrar los números pares usando filter()
+numeros_pares = filter(es_par, numeros)
+
+# Convertir el resultado a una lista
+numeros_pares_lista = list(numeros_pares)
+
+print(numeros_pares_lista)  # Output: [2, 4]
+```
+
+En este ejemplo, `filter(es_par, numeros)` aplica la función `es_par` a cada elemento de la lista `numeros` y devuelve un iterable que contiene solo los elementos para los cuales `es_par` devuelve `True` (en este caso, los números pares).
+
+### 3. `reduce()`
+
+La función `reduce()` se utiliza para aplicar una función a una secuencia de elementos, de manera que se reduce la secuencia a un solo valor. A partir de Python 3, `reduce()` ya no es una función incorporada, sino que se encuentra en el módulo `functools`. La sintaxis es:
+
+```python
+from functools import reduce
+
+reduce(función, iterable [, valor_inicial])
+```
+
+- `función`: Es la función que se aplica a dos elementos del iterable a la vez.
+- `iterable`: Es el iterable sobre el cual se aplica la función.
+- `valor_inicial` (opcional): Es el valor inicial para comenzar la reducción.
+
+Ejemplo de uso de `reduce()`:
+
+```python
+from functools import reduce
+
+# Función para sumar dos números
+def suma(x, y):
+    return x + y
+
+# Lista de números
+numeros = [1, 2, 3, 4, 5]
+
+# Calcular la suma de todos los números usando reduce()
+suma_total = reduce(suma, numeros)
+
+print(suma_total)  # Output: 15 (que es 1 + 2 + 3 + 4 + 5)
+```
+
+En este ejemplo, `reduce(suma, numeros)` aplica la función `suma` a cada par de elementos sucesivos de la lista `numeros`, de modo que reduce la lista a un solo valor, que es la suma total de todos los elementos.
+
+### Consideraciones adicionales
+
+- **Eficiencia:** Estas funciones son eficientes porque operan sobre iterables sin necesidad de bucles explícitos, lo cual puede simplificar y mejorar la legibilidad del código.
+- **Programación funcional:** Son características de la programación funcional, que enfatiza el uso de funciones puras y operaciones sobre datos inmutables.
+
+Espero que esta explicación te haya sido útil para comprender cómo funcionan `map()`, `filter()` y `reduce()` en Python y cómo puedes utilizarlas en tu propio código.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -58,15 +58,43 @@ datos = obtener_datos_persona(nombre, edad)
 print("Datos de la persona:", datos)
 
 
-
+## ejemplo de lambda
+print (lambda n,a:f"hola, {n} , {a} "
+      print(saludo("ruth","castillo")))
   
 
+# crear un programa anonimo que reciba como parametro 
+# una lista de 5 minutos y retorne dos listas uno con los 
+# numeros pares y otra con numeros impares 
+
+
+# Definir la función anónima
+anonimo = lambda lista: ([x for x in lista if x % 2 == 0], [x for x in lista if x % 2 != 0])
+
+# Ejemplo de uso
+lista_numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+pares, impares = anonimo(lista_numeros)
+
+print("Lista de números pares:", pares)
+print("Lista de números impares:", impares)
 
 
 
+lista_numeros =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+pares=lambda l:{n for n in "lista" if n%2==0}
+impares=lambda l:{n for n in "lista" if n%2==0}
+print(pares("lista"))
+print(impares("lista"))
 
 
 
+def mensaje(m)
+    print(m)
+def pedir_nombre():
+    nombre=input("ingrese tu nombre")
+    return nombre
+mensaje(pedir_nombre())      
 
 
 
