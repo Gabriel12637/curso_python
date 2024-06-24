@@ -95,7 +95,7 @@ def pedir_nombre():
     nombre=input("ingrese tu nombre")
     return nombre
 mensaje(pedir_nombre())      
-
+ 
 
 
 

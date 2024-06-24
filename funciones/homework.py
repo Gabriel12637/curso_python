@@ -33,7 +33,7 @@ def sum(*args):
 #empaqueta y desempaqueta de argumento nominal 
 def  alumnos(**kwargs):
     print(kwargs)
-alumnos(nombre="miguel",apellido="largo",edad=30)
+alumnos(nombre="miguel",apellido="largo",edad=30) 
 
 
     
