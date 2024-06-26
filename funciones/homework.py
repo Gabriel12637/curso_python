@@ -37,8 +37,27 @@ alumnos(nombre="miguel",apellido="largo",edad=30)
 
 
     
-    
+#crear una lista de alumnos con los siguientes campos
+#nombre,apellido,edad,celular,email
+#1 .actualizar los registro con un campo mas tods tendran el campo de programa de enfermeria
+#2 .buscar el segundo registro y actualizar su edad a 50 años
 
+# Crear la lista de alumnos con los campos iniciales
+alumnos = [
+    {"nombre": "Juan", "apellido": "Perez", "edad": 25, "celular": "123456789", "email": "juan@example.com"},
+    {"nombre": "Maria", "apellido": "Gomez", "edad": 30, "celular": "987654321", "email": "maria@example.com"},
+    {"nombre": "Carlos", "apellido": "Lopez", "edad": 28, "celular": "456789123", "email": "carlos@example.com"}
+]
+
+# Agregar el campo "programa" a todos los registros
+for alumno in alumnos:
+    alumno["programa"] = "Enfermería"
+
+# Actualizar la edad del segundo registro a 50 años
+alumnos[1]["edad"] = 50
+
+# Mostrar la lista de alumnos actualizada
+print(alumnos)
 
 
 

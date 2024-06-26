@@ -95,15 +95,91 @@ def pedir_nombre():
     nombre=input("ingrese tu nombre")
     return nombre
 mensaje(pedir_nombre())      
+
+# map
+lista=[4,7,8,5,2]
+map(lambda x:x+1,lista) # por defeceto retorna una lista
+nueva_lista=list(map(lambda x:x+1,lista)) #por defecto retorna una lista
+print(nueva_lista)
+# tengo una lista de alumnos que todos ellos aprobaron y pasan al tercer cemestre,
+# problema en mi lista todos estan con el segundo
+# semestre por lo que tendremos que crear una solucion que cambie el campo de semestre de 2 a 3
+
+(
+    "nombre":"abel",
+    "edad":36,
+    "semestre":2
+
+),
+(
+    "nombre":"anthony",
+    "edad":40,
+    "semestre":2
+),
+(
+    "nombre":"edith"
+    "edad":50,
+    "semestre":2
+)
+def objeto(e):
+    if"semestre" in e:
+        e["semestre"]=e["semestre"]+1
+    return[
+        e
+    ]
+
+alumnos_actualizados=list(map(objeto,lista_alumnos))
+print(alumnos_actualizados)
+
  
 
+# Lista de alumnos con información extendida
+alumnos = [
+    {"nombre": "abel", "edad": 36, "semestre": 2, "programa_estudio": "arquitectura de plataforma"},
+    {"nombre": "anthony", "edad": 40, "semestre": 2, "programa_estudio": "arquitectura de plataforma"},
+    {"nombre": "edith", "edad": 50, "semestre": 2, "programa_estudio": "arquitectura de plataforma"}
+]
+
+# Definimos una función para actualizar cada alumno
+def actualizar_alumno(alumno):
+    alumno["semestre"] = 3
+    alumno["programa_estudio"] = "Arquitectura de Plataforma"
+    return alumno
+
+# Usamos map para aplicar la función a cada alumno en la lista
+alumnos_actualizados = list(map(actualizar_alumno, alumnos))
+
+# Mostrar la lista actualizada de alumnos con programa de estudio
+for alumno in alumnos_actualizados:
+    print(f"Nombre: {alumno['nombre']}, Edad: {alumno['edad']}, Semestre: {alumno['semestre']}, Programa de Estudio: {alumno['programa_estudio']}")
 
 
 
+#filter
+#devolver los numeros pares de una lista
+lista=[4,8,2,5,7,10,6,5,2,20]
+nueva_lista=list(filter(lambda x:x%2==0,lista))
+print(nueva_lista)
 
+(
+    "nombre":"abel",
+    "edad":36,
+    "semestre":2
 
+),
+(
+    "nombre":"anthony",
+    "edad":40,
+    "semestre":2
+),
+(
+    "nombre":"edith"
+    "edad":50,
+    "semestre":2
+)
 
-
+lista_filtrada=(list(filter)(lambda x:x["edad"]<50,lista_alumnos))
+print(lista_filtrada)
 
 
 
