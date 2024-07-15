@@ -4,4 +4,4 @@ def es_menor(lista):
     for n in lista:
         if n >menor:
             menor=n
-    return menor
+    return menor 
