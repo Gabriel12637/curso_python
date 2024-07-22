@@ -3,7 +3,7 @@ def f_cuenta_vocales(text:str):
     un texto"""
     text_minuscula:str=text.lowr()
     cantidad_vocales=0
-    for n in text _minusculas:
+    for n in text_minusculas:
         if n == "a":
             cantidad_vocales+=1
     return cantidad_vocales
