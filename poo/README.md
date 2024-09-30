@@ -46,3 +46,14 @@ Muchos de los lenguajes de programacion son creados en base a un paradigma,
 ejemplo java es un lenguaje que adopta el paradigma POO(Programacion Orienda 
 a Objetos). Sin embargo existen lenguajes de programacion que adoptan varios 
 paradigmas como es el caso de python y javascript estos son lenguajes multiparadigmas.
+
+UML
+lenguage unificado de modelado
+esta hora las clases estan reprensentado por rectangulos verticales
+el uml es un lenguaje visual a esto se le conoce como flujo gramas dentro 
+de uml cada reprecentacion grafica tiene un significado gacias a eso puedo 
+dibujar o graficar en uml no escribres tiene 3 partes la 
+primera nombre del objeto
+medio atributos (variables o caracteristicas)
+parte final objetos(funciones,acciones)
+los objetos pueden ser visibles y tambien pueden ser cosas logicas 
