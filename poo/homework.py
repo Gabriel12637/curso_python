@@ -12,7 +12,7 @@ class Banco:
         self.numero_cuenta = numero_cuenta
         self.saldo = saldo_inicial
 
-gabriel=Banco("gabriel","rodriguez","536372","4251652722","$1000")
+# gabriel=Banco("gabriel","rodriguez","536372","4251652722","$1000")
 
 class Banco:
     def __init__(self, nombre, apellido, dni, numero_cuenta, saldo_inicial=0):
@@ -34,11 +34,11 @@ class Banco:
         return f"{self.nombre} {self.apellido}: {self.saldo} €"
 
 # Ejemplo de uso
-cliente = Banco("Juan", "Pérez", "12345678A", "ES12345678901234567890", 1000)
-print(cliente.ver_estado_cuenta())
-cliente.depositar(500)
-cliente.retirar(200)
-print(cliente.ver_estado_cuenta())
+# cliente = Banco("Juan", "Pérez", "12345678A", "ES12345678901234567890", 1000)
+# print(cliente.ver_estado_cuenta())
+# cliente.depositar(500)
+# cliente.retirar(200)
+# print(cliente.ver_estado_cuenta())
   
 
 
@@ -69,9 +69,10 @@ class Agencia:
         return f"{self.nombre} {self.apellido}, DNI: {self.dni}, Viaje: {self.fecha_viaje}, Origen: {self.origen or 'No ingresado'}, Destino: {self.destino or 'No ingresado'}"
 
 # Ejemplo de uso
-pasajero = Agencia("Ana", "García", "98765432B", "00123", "2024-10-15")
-pasajero.ingresar_origen("Madrid")
-pasajero.ingresar_destino("Barcelona")
+pasajero = Agencia("lucho", "perrez", "98765432B", "00123", "2024-10-15")
+pasajero.ingresar_origen("lima")
+pasajero.ingresar_destino("san borja")
 print(pasajero.ver_estado_pasaje())
 pasajero.cancelar_viaje()
 print(pasajero.ver_estado_pasaje())
+
